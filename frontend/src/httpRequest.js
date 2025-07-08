@@ -1,5 +1,8 @@
 import axios from "axios";
 
-export default axios.create({
-  withCredentials: true,
+const httpRequest = axios.create({
+  baseURL: process.env.REACT_APP_BACKEND_URL,
+  withCredentials: true,  // 🔥 CORS fix!
 });
+
+export default httpRequest;

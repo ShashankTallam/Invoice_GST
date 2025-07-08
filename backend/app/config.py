@@ -5,7 +5,7 @@ import os
 load_dotenv()
 
 # Language used for invoice OCR
-INVOICE_LANG = "slk"
+INVOICE_LANG = "eng"
 
 # Backend URL (for use by frontend if needed)
 BACKEND_URL = "http://localhost:5000"
